@@ -29,7 +29,7 @@ Cara kedua bisa digunakan apabila ingin melakukan run dengan `offline` dengan la
 Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh karena itu saya menyampaikan banyak 🙏Terimakasih kepada semua pihak yang sudah mendukung project ini sampai online. berikut beberapa pihak yang terlibat pada project ini :
 
 * Library ✨React JS 
-* CSS Framework 🍃Tailwind CSS
+* CSS Framework 🍃Pure Tailwind CSS
 * Repository 👩‍💻Gihub 
 
 ## Screenshot
@@ -38,5 +38,5 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 Coming Soon ⏳
 
 ## Latest Issue
-- [ ] Coming Soon ⏳
+- [ ] Fix Google site identification
 ### <a href="https://github.com/fajriyan/portfolio/issues/new">📢Laporkan Masalah</a>
