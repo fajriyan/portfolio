@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# #2 Project Portfolio Fajriyan 💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Berikut adalah project portfolio saya, pada project kali ini saya menggunakan library Javascript yakni ✨React JS dengan CSS Framework menggunakan 🍃Tailwind CSS. Website ini nantinya diharapkan bisa menggambarkan mengenai diri saya dan dapat menyuguhkan informasi tentang apa yang telah saya kerjakan.
 
-## Available Scripts
+[![Build](https://img.shields.io/github/followers/fajriyan)](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffajriyan)
+[![Badges](https://img.shields.io/github/stars/fajriyan/portfolio)]()
+[![Badges](https://img.shields.io/github/languages/code-size/fajriyan/portfolio)]()
+[![Badges](https://img.shields.io/bower/l/react)]()
+[![Badges](https://img.shields.io/github/directory-file-count/fajriyan/portfolio)]()
+[![Badges](https://img.shields.io/github/package-json/v/fajriyan/portfolio?label=package%20json)]()
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to run it
 
-### `npm test`
+Untuk menjalankan project ini kalian bisa melakukan dengan 2 cara, sebagai berikut : 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Access Here (Online)`
 
-### `npm run build`
+Kalian bisa melakukan pengaksesan website secara online [disini](https://fajriyan.pages.dev/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Download Project (Run Offline)`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cara kedua bisa digunakan apabila ingin melakukan run dengan `offline` dengan langsung melakukan download project [disini](https://github.com/fajriyan/portfolio.git).
 
-### `npm run eject`
+## Support
+Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh karena itu saya menyampaikan banyak 🙏Terimakasih kepada semua pihak yang sudah mendukung project ini sampai online. berikut beberapa pihak yang terlibat pada project ini :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Library ✨React JS 
+* CSS Framework 🍃Pure Tailwind CSS
+* Repository 👩‍💻Gihub 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Homepage
+Coming Soon ⏳
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Latest Issue
+- [ ] Fix Google site identification
+### <a href="https://github.com/fajriyan/portfolio/issues/new">📢Laporkan Masalah</a>
