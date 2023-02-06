@@ -85,8 +85,10 @@ const PageM = () => {
             </div>
           </div>
         </article>
-        {/*  */}
+
+        {/* grid start */}
         <div className="my-10 grid md:grid-cols-2 gap-5">
+          {/* | My Learning Journey start */}
           <div className="">
             <h1 className="text-xl font-semibold font-sans mb-2">
               My Learning Journey
@@ -111,12 +113,15 @@ const PageM = () => {
               </article>
             ))}
           </div>
+          {/* | My Learning Journey end */}
+
+          {/* || My Expertise start */}
           <div className="">
             {" "}
             <h1 className="text-xl font-semibold font-sans mb-2">
               My Expertise
             </h1>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 ">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 ">
               {DataExp.map((Ex) => (
                 <article
                   key={Ex.id}
@@ -140,7 +145,9 @@ const PageM = () => {
               ))}
             </div>
           </div>
+          {/* || My Expertise end */}
         </div>
+        {/* grid  end */}
 
         {/* accordion start */}
         <div className="">

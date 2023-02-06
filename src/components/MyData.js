@@ -87,17 +87,24 @@ export const SummaryProject = [
 export const DataChangeLog = [
   /*  color documentation
   success : bg-emerald-100 text-emerald-800
-  pending : bg-amber-100 text-amber-800 
+  update : bg-amber-100 text-amber-800 
   error   : bg-red-100 text-red-700
   */
-
   {
-    author: "Fajriyan",
+    author: "fajriyan",
+    date: "27/01/2023",
+    version: "1.0",
+    color: "bg-amber-100 text-amber-800",
+    status: "update",
+    desc: "add some data expertise",
+  },
+  {
+    author: "fajriyan",
     date: "20/01/2023",
     version: "1.0",
     color: "bg-emerald-100 text-emerald-800",
-    status: "Release",
-    desc: " First website release",
+    status: "release",
+    desc: "first website release",
   },
 ];
 export const DataLearnings = [
@@ -144,7 +151,7 @@ export const DataExp = [
   },
   {
     id: 4,
-    img: "https://image.pngaaa.com/896/2507896-middle.png",
+    img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     name: "React JS",
     level: "Intermediate ",
   },
@@ -174,6 +181,18 @@ export const DataExp = [
   },
   {
     id: 9,
+    img: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+    name: "Bootstrap",
+    level: "Advanced",
+  },
+  {
+    id: 10,
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    name: "Tailwind",
+    level: "Intermediate",
+  },
+  {
+    id: 11,
     img: "https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.png",
     name: "Figma",
     level: "Beginner",
