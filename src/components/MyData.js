@@ -92,6 +92,14 @@ export const DataChangeLog = [
   */
   {
     author: "fajriyan",
+    date: "09/02/2023",
+    version: "1.0",
+    color: "bg-amber-100 text-amber-800",
+    status: "update",
+    desc: "add google site verification",
+  },
+  {
+    author: "fajriyan",
     date: "27/01/2023",
     version: "1.0",
     color: "bg-amber-100 text-amber-800",
