@@ -35,8 +35,14 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 ## Screenshot
 
 ### Homepage
-Coming Soon ⏳
+![Homepage](https://user-images.githubusercontent.com/56616688/218357486-fa3991b0-ae9a-42cf-96c8-6e5911773aa8.png)
+
+### Project page
+![Project](https://user-images.githubusercontent.com/56616688/218357594-1f14afb1-3c53-44e9-9694-36996b6eb9a7.png)
+
+### About Me
+![About Me](https://user-images.githubusercontent.com/56616688/218357651-1dcb0a85-eac0-4886-a4b5-0688866fcb3f.png)
 
 ## Latest Issue
-- [ ] Fix Google site identification
+- [x] Fix Google site identification
 ### <a href="https://github.com/fajriyan/portfolio/issues/new">📢Laporkan Masalah</a>
