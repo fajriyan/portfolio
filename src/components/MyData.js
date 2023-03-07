@@ -9,6 +9,15 @@ const DataProject = [
     link: "https://al-quran.pages.dev/",
   },
   {
+    title: "menulisapaini fajriyan blog 📝",
+    desc: "Ini adalah sebuah project personal blog milik saya pribadi yang saya jadikan menjadi tempat menulis tentang hal apapun yang saya sukai dan tempat saya menyimpan tips dan trik yang saya ketahui, blog ini dibangun menggunakan 📚Blogspot milik Google.",
+    img: "https://images2.imgbox.com/4c/33/hC6mUfhQ_o.png",
+    mt: "Februari",
+    yr: "2023",
+    ct: "Personal",
+    link: "https://menulisapaini.blogspot.com/",
+  },
+  {
     title: "Manajemen FEB UNIV. Brawijaya 🎓",
     desc: "Manajemen FEB merupakan project Website Kampus dari Sekawan Sekawan Studio yang saya terlibat dalam pengerjaanya mulai dari awal, Project ini dibangun menggunakan 🌍Wordpress, project ini bisa disebut multi site dikarenakan didalamnya berisi 5 Program Studi dari FEB UB.",
     img: "https://sekawanstudio.com/wp-content/uploads/2022/10/POTTOFOLIO-MANAJEMEN-FEB.webp",
@@ -90,6 +99,14 @@ export const DataChangeLog = [
   update : bg-amber-100 text-amber-800 
   error   : bg-red-100 text-red-700
   */
+  {
+    author: "fajriyan",
+    date: "07/03/2023",
+    version: "1.0",
+    color: "bg-amber-100 text-amber-800",
+    status: "update",
+    desc: "add data on my project",
+  },
   {
     author: "fajriyan",
     date: "09/02/2023",

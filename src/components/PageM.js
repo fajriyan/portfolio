@@ -76,7 +76,7 @@ const PageM = () => {
                   Last updated :{" "}
                   <a href="/changelog">
                     <button className="underline hover:text-gray-700">
-                      February 2023
+                      Maret 2023
                     </button>
                   </a>
                   , by fajriyan
