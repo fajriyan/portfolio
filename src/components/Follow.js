@@ -3,7 +3,7 @@ import { ContactBTN } from "./MyData";
 const FollowMe = () => {
   return (
     <div className="py-12">
-      <h1 className="text-center">Contact Me</h1>
+      <h2 className="text-center">Contact Me</h2>
       <div className="flex flex-wrap justify-center py-2 gap-2">
         {ContactBTN.map((Fol) => (
           <a key={Fol.link} href={Fol.link} target="_blank" rel="noreferrer">

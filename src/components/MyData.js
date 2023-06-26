@@ -240,3 +240,47 @@ export const ContactBTN = [
     link: "https://instagram.com/fajriyan.nur",
   },
 ];
+export const DataOtherPlatform = [
+  {
+    id: 1,
+    img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png",
+    name: "HTML 5",
+    level: "Advanced ",
+  },
+  {
+    id: 2,
+    img: "https://mitacademys.com/wp-content/uploads/2022/07/logo-2582747_1920.png",
+    name: "CSS 3",
+    level: "Advanced ",
+  },
+  {
+    id: 3,
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    name: "Javascript",
+    level: "Intermediate ",
+  },
+  {
+    id: 4,
+    img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+    name: "React JS",
+    level: "Intermediate ",
+  },
+  {
+    id: 5,
+    img: "https://www.websites24-7.co.uk/wp-content/uploads/2015/09/wplogoblue-notext-rgb.png",
+    name: "Wordpress",
+    level: "Advanced",
+  },
+  {
+    id: 6,
+    img: "https://histla.com/wp-content/uploads/2015/02/Codeigniter.png",
+    name: "Codeigniter",
+    level: "Intermediate",
+  },
+  {
+    id: 7,
+    img: "https://qnp.co.id/wp-content/uploads/2022/06/laravel.jpg",
+    name: "Laravel",
+    level: "Beginner",
+  },
+];

@@ -1,4 +1,4 @@
-import { DataExp, DataLearnings } from "./MyData";
+import { DataExp, DataLearnings, DataOtherPlatform } from "./MyData";
 import FollowMe from "./Follow";
 import Navigation from "./Navigation";
 
@@ -204,6 +204,30 @@ const PageM = () => {
         </div>
 
         {/* accordion end */}
+
+        <h1 className="text-xl font-semibold font-sans mt-10 mb-2">
+          Find me on other platforms
+        </h1>
+
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-5 ">
+          {DataOtherPlatform.map((Op) => (
+            <article
+              key={Op.id}
+              className="rounded-lg border border-slate-400 p-2 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 flex flex-wrap items-end"
+            >
+              <img
+                src={Op.img}
+                alt={Op.name}
+                className="object-contain rounded-full p-1"
+              />
+
+              <div className="w-fit">
+                <p className="text-sm font-medium text-gray-900">{Op.name}</p>
+                <p className="font-medium text-xs text-green-600">{Op.level}</p>
+              </div>
+            </article>
+          ))}
+        </div>
 
         {/* container end  */}
       </div>

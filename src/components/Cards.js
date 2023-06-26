@@ -62,6 +62,8 @@ const Cards = () => {
 
             <div className="hidden sm:block sm:basis-60 lg:py-3">
               <img
+                width="100"
+                height="100"
                 alt={d.title}
                 src={d.img}
                 className="aspect-square h-full w-full object-cover rounded-lg border-dashed border-[1.5px] border-violet-400"
@@ -71,9 +73,9 @@ const Cards = () => {
             <div className="flex flex-1 flex-col justify-between">
               <div className="border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 text-left">
                 <button>
-                  <h3 className="font-bold uppercase text-gray-900 text-left">
+                  <h2 className="font-bold uppercase text-gray-900 text-left">
                     {d.title}
-                  </h3>
+                  </h2>
                 </button>
 
                 <p className="mt-2 text-sm leading-relaxed text-gray-700 text-justify">
