@@ -209,7 +209,10 @@ const PageM = () => {
           Find me on other platforms
         </h1>
 
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-5 ">
+        <div className="p-4 border border-slate-800 rounded-md">
+          Waiting for Data ⏳
+        </div>
+        {/* <div className="grid grid-cols-3 md:grid-cols-5 gap-5 ">
           {DataOtherPlatform.map((Op) => (
             <article
               key={Op.id}
@@ -227,7 +230,7 @@ const PageM = () => {
               </div>
             </article>
           ))}
-        </div>
+        </div> */}
 
         {/* container end  */}
       </div>
