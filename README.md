@@ -10,8 +10,6 @@ Berikut adalah project portfolio saya, pada project kali ini saya menggunakan li
 [![Badges](https://img.shields.io/github/package-json/v/fajriyan/portfolio?label=package%20json)]()
 
 
-
-
 ## How to run it
 
 Untuk menjalankan project ini kalian bisa melakukan dengan 2 cara, sebagai berikut : 
@@ -19,6 +17,7 @@ Untuk menjalankan project ini kalian bisa melakukan dengan 2 cara, sebagai berik
 ### `Access Here (Online)`
 
 Kalian bisa melakukan pengaksesan website secara online [disini](https://fajriyan.pages.dev/).
+
 
 
 ### `Download Project (Run Offline)`
@@ -31,6 +30,10 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 * Library ✨React JS 
 * CSS Framework 🍃Pure Tailwind CSS
 * Repository 👩‍💻Gihub 
+
+### Next Update
+- [ ] change cra to vitejs
+
 
 ## Screenshot
 
