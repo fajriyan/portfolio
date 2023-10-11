@@ -32,7 +32,8 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 * Repository 👩‍💻Gihub 
 
 ### Next Update
-- [ ] change cra to vitejs
+- [x] change cra to vitejs
+- [ ] update data project 
 
 
 ## Screenshot
