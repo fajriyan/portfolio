@@ -1,4 +1,4 @@
-import { ContactBTN } from "./MyData";
+import { ContactBTN } from "../data/Important";
 
 const FollowMe = () => {
   return (

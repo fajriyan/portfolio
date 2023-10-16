@@ -6,8 +6,8 @@ const Heros = () => {
       <section className="text-white" id="hero">
         <div className="mx-auto flex items-center h-96 md:h-screen lg:items-center">
           <div className="mx-auto px-3 text-center">
-            <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-slate-600 to-slate-900 bg-clip-text text-transparent ">
-              Hi, I'm Fajriyan
+            <h1 className="text-3xl lg:text-5xl font-bold text-slate-700">
+              Hi, I'm fajriyan
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-slate-800 ">

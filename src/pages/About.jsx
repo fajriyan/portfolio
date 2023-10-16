@@ -1,10 +1,10 @@
-import { DataExp, DataLearnings, DataOtherPlatform } from "./MyData";
-import FollowMe from "./Follow";
-import Navigation from "./Navigation";
+import React from "react";
+import Navigation from "../components/Navigation";
+import FollowMe from "../components/Follow";
+import { DataExp, DataLearnings } from "../data/Important";
 
-const PageM = () => {
+const About = () => {
   const years = new Date();
-
   return (
     <>
       {window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
@@ -76,7 +76,7 @@ const PageM = () => {
                   Last updated :{" "}
                   <a href="/changelog">
                     <button className="underline hover:text-gray-700">
-                      Maret 2023
+                      Oktober 2023
                     </button>
                   </a>
                   , by fajriyan
@@ -259,4 +259,5 @@ const PageM = () => {
     </>
   );
 };
-export default PageM;
+
+export default About;

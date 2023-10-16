@@ -1,19 +1,14 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { mainMenu } from "../data/Important";
 
 const Navigation = () => {
-  let activeStyle = {
-    border: "1px solid black",
-    padding: "10px",
-    borderRadius: "11px",
-  };
-
+  const currentRoute = useLocation();
   const [open, setOpen] = useState(false);
 
   const OpenMenu = () => {
     setOpen(!open);
   };
-
   return (
     <>
       <header
@@ -32,39 +27,20 @@ const Navigation = () => {
             <div className="hidden md:block">
               <nav aria-label="Site Nav">
                 <ul className="flex items-center gap-6 text-md font-semibold text-slate-800 ">
-                  <li>
-                    <NavLink
-                      to="/"
-                      className="transition hover:text-gray-500/75"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Home
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/project"
-                      className="transition hover:text-gray-500/75"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Projects
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/about"
-                      className="transition hover:text-gray-500/75"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      About Me
-                    </NavLink>
-                  </li>
+                  {mainMenu.map((i) => (
+                    <li key={i.id}>
+                      <NavLink
+                        to={i.url}
+                        className={
+                          currentRoute.pathname === i.url
+                            ? "md:border-b-2 md:py-5 border-slate-600"
+                            : "text-slate-800 md:hover:border-b-2 md:py-5 border-slate-600"
+                        }
+                      >
+                        {i.title}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
@@ -108,39 +84,20 @@ const Navigation = () => {
                 </button>
                 {open ? (
                   <ul className="absolute flex gap-4 top-16 w-full right-0 p-4 bg-violet-100 backdrop-blur-xl bg-opacity-90 border-y border-slate-500">
-                    <li>
-                      <NavLink
-                        to="/"
-                        className="transition hover:text-gray-500/75"
-                        style={({ isActive }) =>
-                          isActive ? activeStyle : undefined
-                        }
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/project"
-                        className="transition hover:text-gray-500/75"
-                        style={({ isActive }) =>
-                          isActive ? activeStyle : undefined
-                        }
-                      >
-                        Projects
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/about"
-                        className="transition hover:text-gray-500/75"
-                        style={({ isActive }) =>
-                          isActive ? activeStyle : undefined
-                        }
-                      >
-                        About Me
-                      </NavLink>
-                    </li>
+                    {mainMenu.map((i) => (
+                      <li key={i.id}>
+                        <NavLink
+                          to={i.url}
+                          className={
+                            currentRoute.pathname === i.url
+                              ? "border-b-2 py-4 border-slate-700"
+                              : "text-slate-800 hover:border-b-2 py-4 border-slate-700"
+                          }
+                        >
+                          {i.title}
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 ) : null}
               </div>

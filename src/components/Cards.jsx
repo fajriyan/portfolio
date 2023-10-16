@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DataProject from "./MyData";
+import DataProject from "../data/Important";
 
 const Cards = () => {
   const [selected, setSelected] = useState("");

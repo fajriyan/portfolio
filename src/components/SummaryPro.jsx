@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { SummaryProject } from "./MyData";
+import { SummaryProject } from "../data/Important";
 
 const SummaryPro = () => {
   return (

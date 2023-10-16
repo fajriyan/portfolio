@@ -1,4 +1,4 @@
-import { DataChangeLog } from "./MyData";
+import { DataChangeLog } from "../data/Important";
 
 const Changelog = () => {
   return (
