@@ -5,9 +5,9 @@ const SummaryPro = () => {
   return (
     <div className="container mx-auto">
       <div className="py-7 flex flex-wrap">
-        <h1 className="font-bold text-3xl text-slate-800 w-full text-center">
+        <h2 className="font-bold text-3xl text-slate-800 w-full text-center">
           Project Summary
-        </h1>
+        </h2>
         <p className="w-full text-center mt-2">My latest project collection</p>
       </div>
 
@@ -29,6 +29,8 @@ const SummaryPro = () => {
               <img
                 alt={d.title}
                 src={d.img}
+                width="100%"
+                height="100%"
                 className="aspect-square h-full w-full object-cover rounded-lg border-dashed border-[1px] border-violet-400 "
               />
             </div>

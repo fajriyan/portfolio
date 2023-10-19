@@ -2,12 +2,18 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const years = new Date();
   return (
     <>
       {window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Me | Portfolio fajriyan</title>
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <Navigation />
       {/* -/- */}
       <div className="container mx-auto py-5 px-3 md:px-0">
@@ -16,7 +22,9 @@ const About = () => {
             <img
               className="rounded-xl"
               src="https://avatars.githubusercontent.com/u/56616688?v=4"
-              alt="fajriyan"
+              alt="fajriyan profile"
+              width="100%"
+              height="100%"
             />
           </div>
           <div className="flex items-start">
@@ -28,14 +36,16 @@ const About = () => {
                 <img
                   className="rounded-xl"
                   src="https://avatars.githubusercontent.com/u/56616688?v=4"
-                  alt="fajriyan"
+                  alt="fajriyan profile"
+                  width="100%"
+                  height="100%"
                 />
               </div>
             </div>
 
             <div className="sm:ml-8">
               <h1 className=" text-2xl font-semibold font-sans sm:text-xl">
-                Hai, saya Fajriyan Nur
+                Hai, saya fajriyan nur
               </h1>
 
               <p className="mt-1 text-sm text-gray-700 text-justify">
@@ -90,9 +100,9 @@ const About = () => {
         <div className="my-10 grid md:grid-cols-2 gap-5">
           {/* | My Learning Journey start */}
           <div className="">
-            <h1 className="text-xl font-semibold font-sans mb-2">
+            <h2 className="text-xl font-semibold font-sans mb-2">
               My Learning Journey
-            </h1>
+            </h2>
             {DataLearnings.map((Lr) => (
               <article
                 key={Lr.id}
@@ -118,9 +128,9 @@ const About = () => {
           {/* || My Expertise start */}
           <div className="">
             {" "}
-            <h1 className="text-xl font-semibold font-sans mb-2">
+            <h2 className="text-xl font-semibold font-sans mb-2">
               My Expertise
-            </h1>
+            </h2>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-2 ">
               {DataExp.map((Ex) => (
                 <article
@@ -130,6 +140,8 @@ const About = () => {
                   <img
                     src={Ex.img}
                     alt={Ex.name}
+                    width="100%"
+                    height="100%"
                     className="object-contain rounded-full p-1"
                   />
 
@@ -151,15 +163,15 @@ const About = () => {
 
         {/* accordion start */}
         <div className="">
-          <h1 className="text-xl font-semibold font-sans mb-4">
+          <h2 className="text-xl font-semibold font-sans mb-4">
             My Career Journey
-          </h1>
+          </h2>
           <details
             className="group border border-slate-400 rounded-lg bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 p-6 [&_summary::-webkit-details-marker]:hidden"
             open
           >
             <summary className="flex items-center justify-between cursor-pointer">
-              <h2 className="font-medium text-gray-900">Coming Soon ⌛</h2>
+              <h2 className="font-medium text-gray-900">Sekawan Studio</h2>
 
               <span className="relative ml-1.5 h-5 w-5 flex-shrink-0">
                 <svg
@@ -195,19 +207,18 @@ const About = () => {
             </summary>
 
             <p className="mt-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+              Saya Bekerja di Sekawan Studio Sebagai Web Developer Sejak Juli
+              2022. Disini biasanya saya membuat Website Company Profile sampai
+              E-Commerce.
             </p>
           </details>
         </div>
 
         {/* accordion end */}
 
-        <h1 className="text-xl font-semibold font-sans mt-10 mb-2">
+        <h2 className="text-xl font-semibold font-sans mt-10 mb-2">
           Find me on other platforms
-        </h1>
+        </h2>
 
         <div className="p-4 border border-slate-800 rounded-md">
           Waiting for Data ⏳

@@ -1,8 +1,14 @@
+import { Helmet } from "react-helmet";
 import { DataChangeLog } from "../data/Important";
 
 const Changelog = () => {
   return (
     <div className="min-h-screen px-3 md:px-0">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Changelog | Portfolio fajriyan</title>
+        <link rel="canonical" href="/changelog" />
+      </Helmet>
       <div className="container mx-auto py-5 md:py-10">
         <a href="/">
           <button className="group relative inline-flex items-center overflow-hidden rounded-lg px-8 py-3 text-white focus:outline-none bg-gradient-to-l hover:bg-gradient-to-t from-gray-900 to-gray-600 shadow-lg focus:ring-2 ring-gray-600 ring-offset-2">
