@@ -12,7 +12,7 @@ const Homepage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Homepage | Portfolio fajriyan</title>
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://fajriyan.pages.dev/" />
       </Helmet>
       <Navigation />
       <Heros />

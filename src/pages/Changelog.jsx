@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { DataChangeLog } from "../data/Important";
+import { Link } from "react-router-dom";
 
 const Changelog = () => {
   return (
@@ -7,10 +8,10 @@ const Changelog = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Changelog | Portfolio fajriyan</title>
-        <link rel="canonical" href="/changelog" />
+        <link rel="canonical" href="https://fajriyan.pages.dev/changelog" />
       </Helmet>
       <div className="container mx-auto py-5 md:py-10">
-        <a href="/">
+        <Link to="/">
           <button className="group relative inline-flex items-center overflow-hidden rounded-lg px-8 py-3 text-white focus:outline-none bg-gradient-to-l hover:bg-gradient-to-t from-gray-900 to-gray-600 shadow-lg focus:ring-2 ring-gray-600 ring-offset-2">
             <span className="absolute -left-8 translate-x-full transition-transform group-hover:translate-x-11">
               <svg
@@ -28,7 +29,7 @@ const Changelog = () => {
               Back to Home
             </span>
           </button>
-        </a>
+        </Link>
 
         <h1 className="mt-9 mb-3 text-2xl">Changelog site : </h1>
         <div className="overflow-x-auto rounded-lg border border-slate-500 border-dashed">

@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const years = new Date();
@@ -12,7 +13,7 @@ const About = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>About Me | Portfolio fajriyan</title>
-        <link rel="canonical" href="/about" />
+        <link rel="canonical" href="https://fajriyan.pages.dev/about" />
       </Helmet>
       <Navigation />
       {/* -/- */}
@@ -84,11 +85,11 @@ const About = () => {
 
                 <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
                   Last updated :{" "}
-                  <a href="/changelog">
+                  <Link to="/changelog">
                     <button className="underline hover:text-gray-700">
                       Oktober 2023
                     </button>
-                  </a>
+                  </Link>
                   , by fajriyan
                 </p>
               </div>

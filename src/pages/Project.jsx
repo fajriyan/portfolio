@@ -12,7 +12,7 @@ const Project = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Project | Portfolio fajriyan</title>
-        <link rel="canonical" href="/project" />
+        <link rel="canonical" href="https://fajriyan.pages.dev/project" />
       </Helmet>
       <Navigation />
       <Cards />

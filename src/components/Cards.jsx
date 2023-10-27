@@ -81,8 +81,22 @@ const Cards = () => {
                 <p className="mt-2 text-sm leading-relaxed text-gray-700 text-justify">
                   {d.desc}
                 </p>
-                <div className="mt-2">
-                  <span className="inline-flex items-center justify-center rounded-lg bg-emerald-100 px-2.5 py-0.5 text-emerald-700 border-[1px] border-dashed border-slate-500">
+                <div className="mt-2 flex gap-2">
+                  <span className="inline-flex items-center justify-center rounded-lg px-2.5 py-0.5 text-slate-800 border-[1px] border-dashed border-slate-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-code-slash"
+                      viewBox="0 0 22 16"
+                    >
+                      <path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z" />
+                      <path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z" />
+                    </svg>
+                    <p className="whitespace-nowrap text-sm">{d.ct}</p>
+                  </span>
+                  <span className="inline-flex items-center justify-center rounded-lg px-2.5 py-0.5 text-slate-800 border-[1px] border-dashed border-slate-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -93,7 +107,7 @@ const Cards = () => {
                     >
                       <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
                     </svg>
-                    <p className="whitespace-nowrap text-sm">{d.ct}</p>
+                    <p className="whitespace-nowrap text-sm">{d.lang}</p>
                   </span>
                 </div>
               </div>
