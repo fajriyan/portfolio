@@ -33,7 +33,8 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 
 ### Next Update
 - [x] change cra to vitejs
-- [x] update data project 
+- [x] update data project
+- [ ] improve SEO
 
 
 ## Screenshot
