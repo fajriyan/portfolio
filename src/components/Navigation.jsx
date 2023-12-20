@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { mainMenu } from "../data/Important";
 
 const Navigation = () => {
@@ -18,10 +18,9 @@ const Navigation = () => {
         <div className="container mx-auto px-3 md:px-0">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <a href="/" className="block text-slate-900 text-lg font-bold">
-                <span className="sr-only">Home</span>
-                <button>Fajriyan</button>
-              </a>
+              <Link to="/" className="block text-slate-900 text-lg font-semibold">
+                fajriyan
+              </Link>
             </div>
 
             <div className="hidden md:block">

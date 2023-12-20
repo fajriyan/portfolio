@@ -13,6 +13,7 @@ const Project = () => {
         <meta charSet="utf-8" />
         <title>Project | Portfolio fajriyan</title>
         <link rel="canonical" href="https://fajriyan.pages.dev/project" />
+        <meta name="keywords" content="project portfolio" />
       </Helmet>
       <Navigation />
       <Cards />

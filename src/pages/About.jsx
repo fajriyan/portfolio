@@ -14,14 +14,14 @@ const About = () => {
         <meta charSet="utf-8" />
         <title>About Me | Portfolio fajriyan</title>
         <link rel="canonical" href="https://fajriyan.pages.dev/about" />
+        <meta name="keywords" content="portfolio" />
       </Helmet>
       <Navigation />
       {/* -/- */}
       <div className="container mx-auto py-5 px-3 md:px-0">
         <article className="rounded-xl bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-100 to-slate-100 p-6 ring-1 ring-slate-300 sm:p-8">
-          <div className="flex items-center sm:hidden w-[30%] mb-2 border-2 border-slate-700 rounded-xl">
+          <div className="flex items-center sm:hidden w-[30%] mb-2 border-2 border-slate-700 rounded">
             <img
-              className="rounded-xl"
               src="https://avatars.githubusercontent.com/u/56616688?v=4"
               alt="fajriyan profile"
               width="100%"
@@ -87,7 +87,7 @@ const About = () => {
                   Last updated :{" "}
                   <Link to="/changelog">
                     <button className="underline hover:text-gray-700">
-                      Oktober 2023
+                      Desember 2023
                     </button>
                   </Link>
                   , by fajriyan
@@ -96,160 +96,260 @@ const About = () => {
             </div>
           </div>
         </article>
-
         {/* grid start */}
-        <div className="my-10 grid md:grid-cols-2 gap-5">
+        <div className="my-10 grid md:grid-cols-2 gap-5 md:px-3 lg:px-0">
           {/* | My Learning Journey start */}
           <div className="">
-            <h2 className="text-xl font-semibold font-sans mb-2">
-              My Learning Journey
-            </h2>
-            {DataLearnings.map((Lr) => (
-              <article
-                key={Lr.id}
-                className="rounded-lg border border-slate-400 p-3 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 shadow-lg mb-4"
-              >
-                <div>
-                  <p className="text-sm text-gray-500">{Lr.status}</p>
+            <h2 className="text-xl font-semibold font-sans">Study Journey</h2>
+            <div className="mt-4 mx-auto relative">
+              <div className="border-l-2 border-dashed border-slate-700">
+                <div className="transform transition ml-10 relative flex items-center px-6 py-4 border border-slate-400 text-slate-800 rounded mb-5 flex-col md:flex-row md:space-y-0">
+                  <div className="w-5 h-5 bg-slate-600 absolute top-0 md:top-[58px] lg:top-[45px] -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <p className="text-lg font-medium text-gray-900">{Lr.name}</p>
-                </div>
+                  <div className="w-10 h-1 bg-violet-300 absolute -left-10 z-0"></div>
 
-                <div className="mt-1 flex gap-1 text-green-600">
-                  <p className="flex gap-2 text-sm">
-                    <span className="font-medium">{Lr.major}</span>-
-                    <span className="text-gray-500">{Lr.since} </span>
-                  </p>
+                  <div className="flex-auto">
+                    <span className="text-sm">2018 - 2022</span>
+                    <h2 className="text-xl font-bold">
+                      PGRI Kanjuruhan University Malang
+                    </h2>
+                    <h3 className="text-md">
+                      Bachelor of Informatics Engineering
+                    </h3>
+                  </div>
                 </div>
-              </article>
-            ))}
+                <div className="transform transition ml-10 relative flex items-center px-6 py-4  border border-slate-400 text-slate-800 rounded mb-10 flex-col md:flex-row md:space-y-0">
+                  <div className="w-5 h-5 bg-slate-600 absolute top-0 md:top-[58px] lg:top-[45px] -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+                  <div className="w-10 h-1 bg-violet-300 absolute -left-10 z-0"></div>
+
+                  <div className="flex-auto">
+                    <span className="text-sm">2016 - 2018</span>
+                    <h2 className="text-xl font-bold">
+                      Senior High School 6 Lamongan
+                    </h2>
+                    <h3 className="text-md">Math and Natural Sciences</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           {/* | My Learning Journey end */}
 
           {/* || My Expertise start */}
           <div className="">
-            {" "}
-            <h2 className="text-xl font-semibold font-sans mb-2">
-              My Expertise
-            </h2>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 ">
-              {DataExp.map((Ex) => (
-                <article
-                  key={Ex.id}
-                  className="rounded-lg border border-slate-400 p-2 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 shadow-lg flex flex-wrap items-end"
-                >
+            <h2 className="text-xl font-semibold font-sans">Expertise</h2>
+            <div className="mt-4">
+              <div className="border border-slate-400 p-3 rounded-md">
+                <h3 className="font-semibold">Front End + Backend</h3>
+                <div className="pt-2 flex gap-2 overflow-auto">
                   <img
-                    src={Ex.img}
-                    alt={Ex.name}
-                    width="100%"
-                    height="100%"
-                    className="object-contain rounded-full p-1"
+                    width={50}
+                    className="object-contain"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://plugins.jetbrains.com/files/15251/377610/icon/pluginIcon.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                    alt=""
                   />
 
-                  <div className="w-fit">
-                    <p className="text-sm font-medium text-gray-900">
-                      {Ex.name}
-                    </p>
-                    <p className="font-medium text-xs text-green-600">
-                      {Ex.level}
-                    </p>
-                  </div>
-                </article>
-              ))}
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                    alt=""
+                  />
+
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://www.ignazkastl.de/static/media/expressjs_logo_icon_169185.e3d4f9e5c8b469e45838.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="mt-4 border border-slate-400 p-3 rounded-md">
+                <h3 className="font-semibold">Programming Languages </h3>
+                <div className="pt-2 flex gap-2">
+                  <img
+                    className="object-contain"
+                    width={50}
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                    alt=""
+                  />
+                  <img
+                    className="object-contain"
+                    width={50}
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png"
+                    alt=""
+                  />
+                  <img
+                    className="object-contain"
+                    width={50}
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                    alt=""
+                  />
+                  <img
+                    className="object-contain"
+                    width={60}
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                    alt=""
+                  />
+                  <img
+                    className="object-contain"
+                    width={60}
+                    src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
           {/* || My Expertise end */}
         </div>
         {/* grid  end */}
-
         {/* accordion start */}
         <div className="">
           <h2 className="text-xl font-semibold font-sans mb-4">
-            My Career Journey
+            Career Journey
           </h2>
-          <details
-            className="group border border-slate-400 rounded-lg bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 p-6 [&_summary::-webkit-details-marker]:hidden"
-            open
-          >
-            <summary className="flex items-center justify-between cursor-pointer">
-              <h2 className="font-medium text-gray-900">Sekawan Studio</h2>
-
-              <span className="relative ml-1.5 h-5 w-5 flex-shrink-0">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </span>
-            </summary>
-
-            <p className="mt-4 leading-relaxed text-gray-700">
+          <div className="border border-slate-400 rounded-md p-2">
+            <h3 className="font-bold text-lg text-slate-800">Sekawan Studio</h3>
+            <p className="text-slate-700">
               Saya Bekerja di Sekawan Studio Sebagai Web Developer Sejak Juli
-              2022. Disini biasanya saya membuat Website Company Profile sampai
-              E-Commerce.
+              2022. Disini biasanya saya membuat Website Company Profile,
+              Website Kampus sampai E-Commerce.
             </p>
-          </details>
+            <div className="flex gap-2 mt-2">
+              Using :
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png"
+                alt=""
+              />
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                alt=""
+              />
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                alt=""
+              />
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-
         {/* accordion end */}
-
         <h2 className="text-xl font-semibold font-sans mt-10 mb-2">
           Find me on other platforms
         </h2>
-
-        <div className="p-4 border border-slate-800 rounded-md">
-          Waiting for Data ⏳
+        <div className="flex gap-2 flex-wrap">
+          <a
+            href="https://unsplash.com/@fajriyan"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_Unsplash.svg/1024px-Logo_of_Unsplash.svg.png"
+              alt=""
+            />
+            Unsplash
+          </a>
+          <a
+            href="https://www.pexels.com/id-id/@fajriyan/"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://seeklogo.com/images/P/pexels-logo-EFB9232709-seeklogo.com.png"
+              alt=""
+            />
+            Pexels
+          </a>
+          <a
+            href="https://instagram.com/fajriyan.nur"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png"
+              alt=""
+            />
+            Instagram
+          </a>
+          <a
+            href="https://menulisapaini.blogspot.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blogger_icon.svg/2048px-Blogger_icon.svg.png"
+              alt=""
+            />
+            Blogger
+          </a>
         </div>
-        {/* <div className="grid grid-cols-3 md:grid-cols-5 gap-5 ">
-          {DataOtherPlatform.map((Op) => (
-            <article
-              key={Op.id}
-              className="rounded-lg border border-slate-400 p-2 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 flex flex-wrap items-end"
-            >
-              <img
-                src={Op.img}
-                alt={Op.name}
-                className="object-contain rounded-full p-1"
-              />
-
-              <div className="w-fit">
-                <p className="text-sm font-medium text-gray-900">{Op.name}</p>
-                <p className="font-medium text-xs text-green-600">{Op.level}</p>
-              </div>
-            </article>
-          ))}
-        </div> */}
 
         {/* container end  */}
       </div>
       <FollowMe />
 
-      <div class="py-4 border-t border-gray-400">
-        <p class="text-center text-xs leading-relaxed text-gray-500">
+      <div className="py-4 border-t border-gray-400">
+        <p className="text-center text-xs leading-relaxed text-gray-500">
           © Fajriyan {years.getFullYear()}. All rights reserved.
           <br />
           Created with{" "}

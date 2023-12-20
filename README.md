@@ -48,6 +48,9 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 ### About Me
 ![About Me](https://user-images.githubusercontent.com/56616688/218357651-1dcb0a85-eac0-4886-a4b5-0688866fcb3f.png)
 
+## Changelog
+- [1.1.0] update layout Page About Me
+
 ## Latest Issue
 - [x] Fix Google site identification
 - [ ] add content my career journey
