@@ -1,6 +1,6 @@
-# #2 Project Portfolio Fajriyan 💻
+# Project Portfolio Fajriyan
 
-Berikut adalah project portfolio saya, pada project kali ini saya menggunakan library Javascript yakni ✨React JS dengan CSS Framework menggunakan 🍃Tailwind CSS. Website ini nantinya diharapkan bisa menggambarkan mengenai diri saya dan dapat menyuguhkan informasi tentang apa yang telah saya kerjakan.
+Berikut adalah project Portfolio saya, disini akan berisi mengenai siapa dan hal-hal yang berkaitan dengan saya, project ini dibangun secara sederhana menggunakan React JS dan Tailwind CSS. Pada halaman project akan ditampilkan beberapa hasil dari project yang sudah selesai saya kerjakan baik itu project internal (milik probadi) atau project dari pekerjaan saya sebagai Web Developer. 
 
 [![Build](https://img.shields.io/github/followers/fajriyan)](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffajriyan)
 [![Badges](https://img.shields.io/github/stars/fajriyan/portfolio)]()
@@ -27,9 +27,8 @@ Cara kedua bisa digunakan apabila ingin melakukan run dengan `offline` dengan la
 ## Support
 Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh karena itu saya menyampaikan banyak 🙏Terimakasih kepada semua pihak yang sudah mendukung project ini sampai online. berikut beberapa pihak yang terlibat pada project ini :
 
-* Library ✨React JS 
-* CSS Framework 🍃Pure Tailwind CSS
-* Repository 👩‍💻Gihub 
+* Library React JS 
+* CSS Framework Tailwind CSS
 
 ### Next Update
 - [x] change cra to vitejs
@@ -49,7 +48,10 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 ![About Me](https://user-images.githubusercontent.com/56616688/218357651-1dcb0a85-eac0-4886-a4b5-0688866fcb3f.png)
 
 ## Changelog
-- [1.1.0] update layout Page About Me
+- [update 1.0.0] migrate cra to vite
+- [1.0.9] fix bug and change style
+- [1.0.19] improve seo and create page 404
+- [1.1.0] update layout Page About Me + Update Data
 
 ## Latest Issue
 - [x] Fix Google site identification
