@@ -350,22 +350,7 @@ const About = () => {
 
       <div className="py-4 border-t border-gray-400">
         <p className="text-center text-xs leading-relaxed text-gray-500">
-          © Fajriyan {years.getFullYear()}. All rights reserved.
-          <br />
-          Created with{" "}
-          <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-            <button className="text-slate-700 hover:text-gray-900 underline">
-              React{" "}
-            </button>
-            ✨
-          </a>{" "}
-          and{" "}
-          <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-            <button className="text-slate-700 hover:text-gray-900 underline">
-              Tailwind CSS
-            </button>
-            🍃.
-          </a>
+          © fajriyan {years.getFullYear()}. All rights reserved.
         </p>
       </div>
     </>

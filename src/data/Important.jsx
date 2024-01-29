@@ -7,7 +7,7 @@ export const mainMenu = [
 const DataProject = [
   {
     title: "Al Qur'an Digital",
-    desc: "Project Sederhana ini dibuat atas keresahan ketika ingin melakukan copy surah al-quran yang susah. Website Sederhana ini dibangun dengan React(CRA) dan Tailwind CSS dengan bantuan Plugin Daisy UI.  ",
+    desc: "Project Sederhana ini dibuat atas keresahan ketika ingin melakukan copy surah al-quran yang susah. Website Sederhana ini dibangun dengan React JS Vite dan Tailwind CSS menggunakan bantuan Plugin Daisy UI.  ",
     img: "https://images.unsplash.com/photo-1598777025922-76f01b057927?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     mt: "January",
     yr: "2023",
