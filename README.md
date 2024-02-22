@@ -56,5 +56,5 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 ## Latest Issue
 - [x] Fix Google site identification
 - [x] add content my career journey
-- [ ] Update Data Project and Summary Project
+- [x] Update Data Project and Summary Project
 ### <a href="https://github.com/fajriyan/portfolio/issues/new">📢Laporkan Masalah</a>
