@@ -14,7 +14,7 @@ const DataProject = [
     lang: "Javascript",
     ct: "Personal",
     link: "https://al-quran.pages.dev/",
-    popular: true,
+    popular: false,
   },
   {
     title: "Public API Data Gempa Bumi",
@@ -37,6 +37,17 @@ const DataProject = [
     ct: "Personal",
     link: "https://menulisapaini.blogspot.com/",
     popular: false,
+  },
+  {
+    title: "Toolsz | Online Tools",
+    desc: "Toolz merupakan project open source dengan tujuan membantu dengan menciptakan tools online yang bisa digunakan dengan mudah dan simple. Project ini dibangun dengan Next JS (App Router) dan menggunakan Tailwid CSS.",
+    img: "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    mt: "Februari",
+    yr: "2023",
+    lang: "Javascript",
+    ct: "Personal",
+    link: "https://toolsz.vercel.app/",
+    popular: true,
   },
   {
     title: "Manajemen FEB UNIV. Brawijaya",
