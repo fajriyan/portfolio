@@ -30,7 +30,7 @@ const DataProject = [
   {
     title: "menulisapaini blog",
     desc: "Project ini dibuat sebagai tempat untuk menyimpan catatan saya selama menjadi Web Dev, mengenai apa saja yang menurut saya perlu untuk di catat. Project ini sangat sederhana hanya menggunakan Blogger milik Google.",
-    img: "https://images2.imgbox.com/4c/33/hC6mUfhQ_o.png",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/menulisapaini.png",
     mt: "Februari",
     yr: "2023",
     lang: "XML",
@@ -40,8 +40,8 @@ const DataProject = [
   },
   {
     title: "Toolsz | Online Tools",
-    desc: "Toolz merupakan project open source dengan tujuan membantu dengan menciptakan tools online yang bisa digunakan dengan mudah dan simple. Project ini dibangun dengan Next JS (App Router) dan menggunakan Tailwid CSS.",
-    img: "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Toolsz merupakan project open source dengan tujuan membantu dengan menciptakan tools online yang bisa digunakan dengan mudah dan simple. Project ini dibangun dengan Next JS (App Router) dan menggunakan Tailwid CSS.",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/toolsz.png",
     mt: "Februari",
     yr: "2023",
     lang: "Javascript",
@@ -57,13 +57,13 @@ const DataProject = [
     yr: "2022",
     lang: "PHP",
     ct: "Sekawan Studio",
-    link: "https://sekawanstudio.com/portofolio/website-manajemen-feb-ub/",
+    link: "https://ik.imagekit.io/fajriyann/portfolio/feb-ub.webp",
     popular: false,
   },
   {
     title: "Adil Makmur Fajar",
     desc: "PT Adil Makmur Fajar (AMCO) adalah sebuah project Company Profile dari Sekawan Studio yang saya terlibat dalam pengerjaanya awal sampai live. Pada project ini menggunakan multi language, terdapat 3 bahasa pada websitenya.",
-    img: "https://sekawanstudio.com/wp-content/uploads/2022/10/POTTOFOLIO-ADIL-MAKMUR.webp",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/amf.webp",
     mt: "Agustus",
     yr: "2022",
     lang: "PHP",
@@ -74,7 +74,7 @@ const DataProject = [
   {
     title: "FIA Universitas Brawijaya",
     desc: "FIA UB adalah project Website Campus dengan multi site yang besar karena didalam website ini tedapat 3 Departemen dengan lebih dari 10 program studi, project ini merupakan project dari Sekawan Studio",
-    img: "https://sekawanstudio.com/wp-content/uploads/2022/10/POTTOFOLIO-FIA.webp",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/fia-ub.webp",
     mt: "April",
     yr: "2022",
     lang: "PHP",
@@ -85,7 +85,7 @@ const DataProject = [
   {
     title: "Cardion UIN 2022",
     desc: "Cardion UIN 2022 merupakan project website landing page sederhana untuk pendaftaran dan Portal Informasi Perlombaan oleh Universitas Islam Negeri Malang, Website ini merupakan project Sekawan Studio.",
-    img: "https://sekawanstudio.com/wp-content/uploads/2022/10/POTTOFOLIO-CARDION.webp",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/cardion.webp",
     mt: "Oktober",
     yr: "2022",
     lang: "PHP",
@@ -96,7 +96,7 @@ const DataProject = [
   {
     title: "Sekawan Studio",
     desc: "Sekawan Studio merupakan project Company Profile internal milik Sekawan Studio sendiri dimana project ini sebenarnya adalah project Revamp dari website yang sebelumnya, project ini berjalan pada akhir tahun 2022.",
-    img: "https://thumbs2.imgbox.com/b3/9b/NlLrsTkX_t.png",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/sekawanstudio.png",
     mt: "November",
     yr: "2022",
     lang: "PHP",
@@ -107,7 +107,7 @@ const DataProject = [
   {
     title: "Asbes Adimas",
     desc: "Project asbes adimas adalah salah satu project company profile milik sekawan Sekawan Studio. Website ini ditujukan untuk menampilkan Perusahaan dan beberapa produk milik dari Asbes Adimas. ",
-    img: "https://sekawanstudio.com/wp-content/uploads/2022/10/POTTOFOLIO-ADIMAS.webp",
+    img: "https://ik.imagekit.io/fajriyann/portfolio/adimas.webp",
     mt: "Desember",
     yr: "2022",
     lang: "PHP",

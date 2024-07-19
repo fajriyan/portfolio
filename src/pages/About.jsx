@@ -15,6 +15,7 @@ const About = () => {
         <title>About Me | Portfolio fajriyan</title>
         <link rel="canonical" href="https://fajriyan.pages.dev/about" />
         <meta name="keywords" content="portfolio" />
+        <meta name="robots" content="index,follow" />
       </Helmet>
       <Navigation />
       {/* -/- */}
@@ -234,7 +235,7 @@ const About = () => {
           <h2 className="text-xl font-semibold font-sans mb-4">
             Career Journey
           </h2>
-          <div className="border border-slate-400 rounded-md p-2">
+          <div className="border mt-2 border-slate-400 rounded-md p-2">
             <h3 className="font-bold text-lg text-slate-800">Sekawan Studio</h3>
             <p className="text-slate-700">
               Saya Bekerja di Sekawan Studio Sebagai Web Developer Sejak Juli
