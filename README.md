@@ -39,13 +39,16 @@ Project ini tentunya tidak lepas dari berbagai pihak yang telah membantu, oleh k
 ## Screenshot
 
 ### Homepage
-![Homepage](https://user-images.githubusercontent.com/56616688/218357486-fa3991b0-ae9a-42cf-96c8-6e5911773aa8.png)
+<img width="1678" alt="image" src="https://github.com/user-attachments/assets/c3113a18-4ba5-46c1-a66e-153d4cd584ba">
+
 
 ### Project page
-![Project](https://user-images.githubusercontent.com/56616688/218357594-1f14afb1-3c53-44e9-9694-36996b6eb9a7.png)
+<img width="1679" alt="image" src="https://github.com/user-attachments/assets/fb909fc2-22ab-47c3-89e9-053ecb56cb6c">
+
 
 ### About Me
-![About Me](https://user-images.githubusercontent.com/56616688/218357651-1dcb0a85-eac0-4886-a4b5-0688866fcb3f.png)
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/7fea6a14-c47a-4d2e-8976-ec4d607a28e9">
+
 
 ## Changelog
 - [update 1.0.0] migrate cra to vite
