@@ -11,8 +11,7 @@ const Heros = () => {
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-slate-800 ">
-              I'm a web developer at Sekawanstudio focused on Frontend
-              Development and CMS exploration like Wordpress and others.
+              I'm a Fullstack Web Developer at Sitespirit focused on exploration <span className="font-semibold">Content Management System</span> like filament, winter cms, statamic etc.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">

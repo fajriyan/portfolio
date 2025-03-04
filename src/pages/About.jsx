@@ -47,20 +47,11 @@ const About = () => {
 
             <div className="sm:ml-8">
               <h1 className=" text-2xl font-semibold font-sans sm:text-xl">
-                Hai, saya fajriyan nur
+                Hai, i'm fajriyan nur
               </h1>
 
               <p className="mt-1 text-sm text-gray-700 text-justify">
-                Saya tertarik pada dunia Web Developer sejak 2014 pada waktu itu
-                saya masih berada di bangku Sekolah Menengah Pertama,
-                ketertarikan itu terjadi karena pada 2014 saya melihat website
-                sekolah saya yang digunakan sebagai sistem informasi dan galeri
-                sekolah, sejak saat itu saya mulai melihat tutorial di berbagai
-                platform seperti Youtube, web pertama yang saya buat adalah web
-                untuk melakukan post blog di platform milik google yaitu
-                Blogger. Saya mulai melihat tutorial tentang template blog
-                seperti edit HTML dan CSS, begitu menyenangkan kemudian saya
-                lanjutkan sampai sekarang.
+              I have been interested in Web Developer since 2014, at the time I was still in Junior High School, the interest occurred because in 2014 I saw my school website which was used as an information system and school gallery, since then I began to see tutorials on various platforms such as Youtube, the first web I made was a web to post blogs on Google's platform, Blogger. I started to see tutorials about blog templates such as editing HTML and CSS, so fun then I continued until now.
               </p>
 
               <div className="mt-4 sm:flex sm:items-center sm:gap-2">
@@ -76,7 +67,7 @@ const About = () => {
                     <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
                   </svg>
                   <p className="ml-1 text-sm font-medium text-slate-800">
-                    Web Developer at Sekawan Studio
+                    Fullstack Web Developer at Sitespirit
                   </p>
                 </div>
 
@@ -88,10 +79,10 @@ const About = () => {
                   Last updated :{" "}
                   <Link to="/changelog">
                     <button className="underline hover:text-gray-700">
-                      Desember 2023
+                      March 2025
                     </button>
                   </Link>
-                  , by fajriyan
+                 {" "} by fajriyan
                 </p>
               </div>
             </div>
@@ -185,7 +176,19 @@ const About = () => {
                   <img
                     width={50}
                     className="object-contain"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/800px-Laravel.svg.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
                     src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png"
+                    alt=""
+                  />
+                  <img
+                    width={50}
+                    className="object-contain"
+                    src="https://static-00.iconduck.com/assets.00/wordpress-icon-2048x2048-rcuhttkd.png"
                     alt=""
                   />
                 </div>
@@ -238,9 +241,7 @@ const About = () => {
           <div className="border mt-2 border-slate-400 rounded-md p-2">
             <h3 className="font-bold text-lg text-slate-800">Sekawan Studio</h3>
             <p className="text-slate-700">
-              Saya Bekerja di Sekawan Studio Sebagai Web Developer Sejak Juli
-              2022. Disini biasanya saya membuat Website Company Profile,
-              Website Kampus sampai E-Commerce.
+              July 2022 - Now
             </p>
             <div className="flex gap-2 mt-2">
               Using :
@@ -263,6 +264,13 @@ const About = () => {
                 width={30}
                 height={30}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                alt=""
+              />
+              <img
+                className="object-contain"
+                width={30}
+                height={30}
+                src="https://static-00.iconduck.com/assets.00/wordpress-icon-2048x2048-rcuhttkd.png"
                 alt=""
               />
               <img
