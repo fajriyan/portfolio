@@ -3,7 +3,7 @@ import DataProject from "../data/Important";
 
 const SummaryPro = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" key={Math.random(20)}>
       <div className="py-7 flex flex-wrap">
         <h2 className="font-bold text-3xl text-slate-800 w-full text-center">
           Project Summary
@@ -13,10 +13,10 @@ const SummaryPro = () => {
 
       <div className="grid grid-cols-1 py-10 px-3 lg:grid-cols-2 md:p-0 gap-4">
         {DataProject.map((d) => (
-          <>
+          <div key={d.title + d.yr + Math.random(20)}>
             {d.popular ? (
               <article
-                key={d.title + d.yr}
+                key={d.title + d.yr + Math.random(20)}
                 className="flex bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-200 via-violet-100 to-slate-100 border-dashed border-[1px] border-slate-600 transition rounded-lg shadow-md hover:ring-2 hover:border-opacity-0 ring-slate-500 group"
               >
                 <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
@@ -102,7 +102,7 @@ const SummaryPro = () => {
                 </div>
               </article>
             ) : null}
-          </>
+          </div>
         ))}
         {/* {SummaryProject.map((d) => (
           <article
