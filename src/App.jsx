@@ -7,7 +7,7 @@ import Error from "./pages/Error";
 
 function App() {
   return (
-    <div className="App bg-gradient-to-r from-violet-50 to-violet-100 selection:bg-slate-800 selection:text-violet-100">
+    <div className="App bg-gradient-to-b from-violet-50 to-violet-100 selection:bg-slate-800 selection:text-violet-100">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/project" element={<Project />} />

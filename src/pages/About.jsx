@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Navigation from "../components/Navigation";
 import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
@@ -6,6 +6,25 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const [lastUpdated, setLastUpdated] = useState("");
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/fajriyan/portfolio/commits?per_page=1")
+      .then((res) => res.json())
+      .then((data) => {
+        const dateStr = data[0]?.commit?.committer?.date;
+        if (dateStr) {
+          const date = new Date(dateStr);
+          const options = { year: "numeric", month: "long" }; // May 2025
+          const formattedDate = date.toLocaleDateString("en-US", options);
+          setLastUpdated(formattedDate);
+        }
+      })
+      .catch((err) => {
+        console.error("Error fetching commit:", err);
+      });
+  }, []);
+
   const years = new Date();
   return (
     <>
@@ -23,7 +42,7 @@ const About = () => {
         <article className="rounded-xl bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-100 to-slate-100 p-6 ring-1 ring-slate-300 sm:p-8">
           <div className="flex items-center sm:hidden w-[30%] mb-2 border-2 border-slate-700 rounded">
             <img
-              src="https://avatars.githubusercontent.com/u/56616688?v=4"
+              src="https://ik.imagekit.io/fajriyann/MVIMG_20221125_161020%202.png?updatedAt=1747231977721"
               alt="fajriyan profile"
               width="100%"
               height="100%"
@@ -37,7 +56,7 @@ const About = () => {
               <div className="flex items-center">
                 <img
                   className="rounded-xl"
-                  src="https://avatars.githubusercontent.com/u/56616688?v=4"
+                  src="https://ik.imagekit.io/fajriyann/MVIMG_20221125_161020%202.png?updatedAt=1747231977721"
                   alt="fajriyan profile"
                   width="100%"
                   height="100%"
@@ -51,7 +70,16 @@ const About = () => {
               </h1>
 
               <p className="mt-1 text-sm text-gray-700 text-justify">
-              I have been interested in Web Developer since 2014, at the time I was still in Junior High School, the interest occurred because in 2014 I saw my school website which was used as an information system and school gallery, since then I began to see tutorials on various platforms such as Youtube, the first web I made was a web to post blogs on Google's platform, Blogger. I started to see tutorials about blog templates such as editing HTML and CSS, so fun then I continued until now.
+                Fullstack Developer with approximately 3 years of experience in
+                web development, from monolith architecture to microservices.
+                Strong frontend expertise, especially in building responsive,
+                intuitive, and user-friendly user interfaces with modern UX/UI
+                principles. Results-oriented and ambitious to deliver the best
+                output aligned with business objectives. Proven ability to
+                develop optimized web products through industry-standard coding
+                practices and effective SEO strategies. Experienced in handling
+                website development and maintenance projects in startups,
+                agencies, and government institutions.
               </p>
 
               <div className="mt-4 sm:flex sm:items-center sm:gap-2">
@@ -67,7 +95,7 @@ const About = () => {
                     <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
                   </svg>
                   <p className="ml-1 text-sm font-medium text-slate-800">
-                    Fullstack Web Developer at Sitespirit
+                    Fullstack Web Developer
                   </p>
                 </div>
 
@@ -77,22 +105,62 @@ const About = () => {
 
                 <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
                   Last updated :{" "}
-                  <Link to="/changelog">
+                  <Link
+                    to="https://github.com/fajriyan/portfolio"
+                    target="_blank"
+                  >
                     <button className="underline hover:text-gray-700">
-                      March 2025
+                      {lastUpdated || "Loading..."}
                     </button>
-                  </Link>
-                 {" "} by fajriyan
+                  </Link>{" "}
+                  by fajriyan
                 </p>
               </div>
             </div>
           </div>
         </article>
         {/* grid start */}
-        <div className="my-10 grid md:grid-cols-2 gap-5 md:px-3 lg:px-0">
-          {/* | My Learning Journey start */}
+        <div className="my-10 grid md:grid-cols-2 gap-10 md:px-3 lg:px-0">
           <div className="">
-            <h2 className="text-xl font-semibold font-sans">Study Journey</h2>
+            <h2 className="text-xl font-semibold font-sans mb-4">
+              WORK EXPERIENCE
+            </h2>
+            <div className="border mt-2 border-slate-400 rounded-md p-2">
+              <h3 className="font-bold text-lg text-slate-800">
+                SiteSpirit | CV Adikara Solusindo - Malang
+              </h3>
+              <p className="text-sm">Fullstack Web Developer</p>
+              <p className="text-slate-700 text-sm">August 2023 - Present</p>
+            </div>
+            <div className="border mt-2 border-slate-400 rounded-md p-2">
+              <h3 className="font-bold text-lg text-slate-800">
+                SMK Negeri 6 Malang - React JS Advanced
+              </h3>
+              <p className="text-sm">
+                Part-time Teaching Class Sekawan Media Industry
+              </p>
+              <p className="text-slate-700 text-sm">October 2025</p>
+            </div>
+            <div className="border mt-2 border-slate-400 rounded-md p-2">
+              <h3 className="font-bold text-lg text-slate-800">
+                SMK Negeri 6 Malang - React JS Beginner
+              </h3>
+              <p className="text-sm">
+                Part-time Teaching Class Sekawan Media Industry
+              </p>
+              <p className="text-slate-700 text-sm">February 2023</p>
+            </div>
+            <div className="border mt-2 border-slate-400 rounded-md p-2">
+              <h3 className="font-bold text-lg text-slate-800">
+                Sekawan Media | PT Sekawan Media Informatika - Malang
+              </h3>
+              <p className="text-sm">Frontend & Web Developer</p>
+              <p className="text-slate-700 text-sm">June 2022 - August 2023</p>
+            </div>
+          </div>
+
+           <div className="">
+            <h2 className="text-xl font-semibold font-sans">EDUCATION</h2>
             <div className="mt-4 mx-auto relative">
               <div className="border-l-2 border-dashed border-slate-700">
                 <div className="transform transition ml-10 relative flex items-center px-6 py-4 border border-slate-400 text-slate-800 rounded mb-5 flex-col md:flex-row md:space-y-0">
@@ -101,13 +169,13 @@ const About = () => {
                   <div className="w-10 h-1 bg-violet-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <span className="text-sm">2018 - 2022</span>
                     <h2 className="text-xl font-bold">
                       PGRI Kanjuruhan University Malang
                     </h2>
-                    <h3 className="text-md">
-                      Bachelor of Informatics Engineering
+                    <h3 className="text-sm">
+                      Informatics Engineering, Cumulative GPA 3.61/4.00
                     </h3>
+                    <span className="text-sm">August 2018 - May 2022</span>
                   </div>
                 </div>
                 <div className="transform transition ml-10 relative flex items-center px-6 py-4  border border-slate-400 text-slate-800 rounded mb-10 flex-col md:flex-row md:space-y-0">
@@ -116,116 +184,267 @@ const About = () => {
                   <div className="w-10 h-1 bg-violet-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <span className="text-sm">2016 - 2018</span>
                     <h2 className="text-xl font-bold">
                       Senior High School 6 Lamongan
                     </h2>
-                    <h3 className="text-md">Math and Natural Sciences</h3>
+                    <h3 className="text-sm">Math and Natural Sciences</h3>
+                    <span className="text-sm">2016 - 2018</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* | My Learning Journey end */}
 
           {/* || My Expertise start */}
-          <div className="">
-            <h2 className="text-xl font-semibold font-sans">Expertise</h2>
+          <div className="md:col-span-2">
+            <h2 className="text-xl font-semibold font-sans">TOOLS & SKILL</h2>
             <div className="mt-4">
               <div className="border border-slate-400 p-3 rounded-md">
-                <h3 className="font-semibold">Front End + Backend</h3>
-                <div className="pt-2 flex gap-2 overflow-auto">
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://plugins.jetbrains.com/files/15251/377610/icon/pluginIcon.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-6 lg:grid-cols-6 xl:grid-cols-12 gap-3">
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png"
+                      alt="Laravel"
+                      title="Laravel"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png"
+                      alt="React"
+                      title="React"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png"
+                      alt="Vite"
+                      title="Vite"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                      alt="php"
+                      title="php"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png"
+                      alt="Tailwind CSS"
+                      title="Tailwind CSS"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/graphql.png"
+                      alt="GraphQL"
+                      title="GraphQL"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
+                      alt="Git"
+                      title="Git"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postman.png"
+                      alt="Postman"
+                      title="Postman"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
+                      alt="HTML"
+                      title="HTML"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
+                      alt="CSS"
+                      title="CSS"
+                    />
+                  </code>
 
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
-                    alt=""
-                  />
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/firebase.png"
+                      alt="Firebase"
+                      title="Firebase"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/supabase.png"
+                      alt="Supabase"
+                      title="Supabase"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://alternative.me/media/256/statamic-icon-9ki3q3g12i981e0c-c.png"
+                      alt="Supabase"
+                      title="Supabase"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/strapi.png"
+                      alt="Strapi"
+                      title="Strapi"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/figma.png"
+                      alt="Figma"
+                      title="Figma"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
+                      alt="JavaScript"
+                      title="JavaScript"
+                    />
+                  </code>
 
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://www.ignazkastl.de/static/media/expressjs_logo_icon_169185.e3d4f9e5c8b469e45838.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/800px-Laravel.svg.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png"
-                    alt=""
-                  />
-                  <img
-                    width={50}
-                    className="object-contain"
-                    src="https://static-00.iconduck.com/assets.00/wordpress-icon-2048x2048-rcuhttkd.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="mt-4 border border-slate-400 p-3 rounded-md">
-                <h3 className="font-semibold">Programming Languages </h3>
-                <div className="pt-2 flex gap-2">
-                  <img
-                    className="object-contain"
-                    width={50}
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-                    alt=""
-                  />
-                  <img
-                    className="object-contain"
-                    width={50}
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png"
-                    alt=""
-                  />
-                  <img
-                    className="object-contain"
-                    width={50}
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
-                    alt=""
-                  />
-                  <img
-                    className="object-contain"
-                    width={60}
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                    alt=""
-                  />
-                  <img
-                    className="object-contain"
-                    width={60}
-                    src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
-                    alt=""
-                  />
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                      alt="TypeScript"
+                      title="TypeScript"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/npm.png"
+                      alt="npm"
+                      title="npm"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redux.png"
+                      alt="Redux"
+                      title="Redux"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react_query.png"
+                      alt="React Query"
+                      title="React Query"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png"
+                      alt="Next.js"
+                      title="Next.js"
+                    />
+                  </code>
+
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php_(elephpant).png"
+                      alt="php (elephpant)"
+                      title="php (elephpant)"
+                    />
+                  </code>
+
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png"
+                      alt="PostgreSQL"
+                      title="PostgreSQL"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png"
+                      alt="MySQL"
+                      title="MySQL"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png"
+                      alt="Docker"
+                      title="Docker"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nginx.png"
+                      alt="Nginx"
+                      title="Nginx"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/digital_ocean.png"
+                      alt="Digital Ocean"
+                      title="Digital Ocean"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png"
+                      alt="Linux"
+                      title="Linux"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/ubuntu.png"
+                      alt="Ubuntu"
+                      title="Ubuntu"
+                    />
+                  </code>
+                  <code>
+                    <img
+                      width="50"
+                      src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rabbitmq.png"
+                      alt="RabbitMQ"
+                      title="RabbitMQ"
+                    />
+                  </code>
                 </div>
               </div>
             </div>
@@ -233,68 +452,53 @@ const About = () => {
           {/* || My Expertise end */}
         </div>
         {/* grid  end */}
-        {/* accordion start */}
-        <div className="">
-          <h2 className="text-xl font-semibold font-sans mb-4">
-            Career Journey
-          </h2>
-          <div className="border mt-2 border-slate-400 rounded-md p-2">
-            <h3 className="font-bold text-lg text-slate-800">Sekawan Studio</h3>
-            <p className="text-slate-700">
-              July 2022 - Now
-            </p>
-            <div className="flex gap-2 mt-2">
-              Using :
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png"
-                alt=""
-              />
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
-                alt=""
-              />
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://static-00.iconduck.com/assets.00/wordpress-icon-2048x2048-rcuhttkd.png"
-                alt=""
-              />
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                alt=""
-              />
-              <img
-                className="object-contain"
-                width={30}
-                height={30}
-                src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        {/* accordion end */}
+
         <h2 className="text-xl font-semibold font-sans mt-10 mb-2">
           Find me on other platforms
         </h2>
         <div className="flex gap-2 flex-wrap">
+          <a
+            href="https://www.npmjs.com/~fajriyan"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://private-user-images.githubusercontent.com/56616688/441974617-8c997ecf-f677-4b6c-be5f-bb8d5380e478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzE4ODgsIm5iZiI6MTc0NzIzMTU4OCwicGF0aCI6Ii81NjYxNjY4OC80NDE5NzQ2MTctOGM5OTdlY2YtZjY3Ny00YjZjLWJlNWYtYmI4ZDUzODBlNDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE0MDYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzMDhmNjViZDE1YmI1NjM1OTJkMDQyMjQ1N2RhNzEzZDdkOTZlNTA4YmUwMDZlYzUzZTA5NjlkNjc4ZTk0MTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9KHz2IVcO3PZju6A6-CG39Qcuq_HluqB8k3VoLjpL4E"
+              alt=""
+            />
+            NPM
+          </a>
+          <a
+            href="https://stackoverflow.com/users/22432262/fajriyan"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://private-user-images.githubusercontent.com/56616688/351334223-571b8277-98a2-41c8-bc96-6aac6175acaa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzE4ODgsIm5iZiI6MTc0NzIzMTU4OCwicGF0aCI6Ii81NjYxNjY4OC8zNTEzMzQyMjMtNTcxYjgyNzctOThhMi00MWM4LWJjOTYtNmFhYzYxNzVhY2FhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE0MDYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFiY2JkMzYwZDA0NTFjZDJhM2I1NGVlZjc4NDIyODg3NDdmNDFkZDYyOGQwYzYyNWQzM2NhNTcyN2U1ZjQ5ZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LWf4L8zmIknpZc5cy8QZDqLm01gV_32sylFbk2EZ3LQ"
+              alt=""
+            />
+            Stack Overflow
+          </a>
+          <a
+            href="https://menulisapaini.blogspot.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blogger_icon.svg/2048px-Blogger_icon.svg.png"
+              alt=""
+            />
+            Blogger
+          </a>
           <a
             href="https://unsplash.com/@fajriyan"
             target="_blank"
@@ -336,20 +540,6 @@ const About = () => {
               alt=""
             />
             Instagram
-          </a>
-          <a
-            href="https://menulisapaini.blogspot.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
-          >
-            <img
-              width={30}
-              className="object-contain"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blogger_icon.svg/2048px-Blogger_icon.svg.png"
-              alt=""
-            />
-            Blogger
           </a>
         </div>
 

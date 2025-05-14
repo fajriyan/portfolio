@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes shakeEvery6s {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(-3px);
+  }
+  4% {
+    transform: translateX(3px);
+  }
+  6% {
+    transform: translateX(-3px);
+  }
+  8% {
+    transform: translateX(3px);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-shake-delay {
+  animation: shakeEvery6s 3s infinite ease-in-out;
+}
+
+.container-path {
+  width: 100%;
+  height: 100%;
+  --color: rgba(144, 122, 243, 0.129);
+  background-color: #e5e7eb00;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+
+
 /* @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 /* 
 body {

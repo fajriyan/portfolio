@@ -30,6 +30,12 @@ const Cards = () => {
             <option value="" defaultValue>
               All Project
             </option>
+            <option key="Sekawan Media" value="Sekawan Media">
+              Sekawan Media
+            </option>
+            <option key="Other" value="Other">
+             Other
+            </option>
             <option key="Studio" value="Studio">
               Sekawan Studio
             </option>
@@ -39,7 +45,7 @@ const Cards = () => {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:p-0 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-2 md:p-0 gap-4">
         {DataProject.filter((QF) => {
           if (!selected) {
             return QF;
@@ -66,7 +72,7 @@ const Cards = () => {
                 height="100"
                 alt={d.title}
                 src={d.img}
-                className="aspect-square h-full w-full object-cover rounded-lg border-dashed border-[1.5px] border-violet-400"
+                className="aspect-square h-[270px] w-full object-cover rounded-lg border-dashed border-[1.5px] border-violet-400"
               />
             </div>
 
