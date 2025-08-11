@@ -148,7 +148,7 @@ const About = () => {
               <p className="text-sm">
                 Part-time Teaching Class Sekawan Media Industry
               </p>
-              <p className="text-slate-700 text-sm">February 2023</p>
+              <p className="text-slate-700 text-sm">February 2024</p>
             </div>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">
@@ -159,7 +159,7 @@ const About = () => {
             </div>
           </div>
 
-           <div className="">
+          <div className="">
             <h2 className="text-xl font-semibold font-sans">EDUCATION</h2>
             <div className="mt-4 mx-auto relative">
               <div className="border-l-2 border-dashed border-slate-700">
@@ -466,7 +466,7 @@ const About = () => {
             <img
               width={30}
               className="object-contain"
-              src="https://private-user-images.githubusercontent.com/56616688/441974617-8c997ecf-f677-4b6c-be5f-bb8d5380e478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzE4ODgsIm5iZiI6MTc0NzIzMTU4OCwicGF0aCI6Ii81NjYxNjY4OC80NDE5NzQ2MTctOGM5OTdlY2YtZjY3Ny00YjZjLWJlNWYtYmI4ZDUzODBlNDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE0MDYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzMDhmNjViZDE1YmI1NjM1OTJkMDQyMjQ1N2RhNzEzZDdkOTZlNTA4YmUwMDZlYzUzZTA5NjlkNjc4ZTk0MTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9KHz2IVcO3PZju6A6-CG39Qcuq_HluqB8k3VoLjpL4E"
+              src="https://pbs.twimg.com/profile_images/1285630920263966721/Uk6O1QGC_400x400.jpg"
               alt=""
             />
             NPM
@@ -480,7 +480,7 @@ const About = () => {
             <img
               width={30}
               className="object-contain"
-              src="https://private-user-images.githubusercontent.com/56616688/351334223-571b8277-98a2-41c8-bc96-6aac6175acaa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzE4ODgsIm5iZiI6MTc0NzIzMTU4OCwicGF0aCI6Ii81NjYxNjY4OC8zNTEzMzQyMjMtNTcxYjgyNzctOThhMi00MWM4LWJjOTYtNmFhYzYxNzVhY2FhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE0MDYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFiY2JkMzYwZDA0NTFjZDJhM2I1NGVlZjc4NDIyODg3NDdmNDFkZDYyOGQwYzYyNWQzM2NhNTcyN2U1ZjQ5ZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LWf4L8zmIknpZc5cy8QZDqLm01gV_32sylFbk2EZ3LQ"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/2048px-Stack_Overflow_icon.svg.png"
               alt=""
             />
             Stack Overflow
