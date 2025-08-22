@@ -19,11 +19,11 @@ const Heros = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <div class="relative inline-flex items-center justify-center gap-4 group">
-                <div class="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-300"></div>
+              <div className="relative inline-flex items-center justify-center gap-4 group">
+                <div className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-300"></div>
                 <a
                   role="button"
-                  class="group relative animate-shake-delay flex items-center justify-center gap-3 w-full rounded-xl bg-gradient-to-l hover:bg-gradient-to-t from-gray-900 to-gray-600 font-semibold px-8 py-3 text-md active:text-opacity-75 sm:w-auto"
+                  className="group relative animate-shake-delay flex items-center justify-center gap-3 w-full rounded-xl bg-gradient-to-l hover:bg-gradient-to-t from-gray-900 to-gray-600 font-semibold px-8 py-3 text-md active:text-opacity-75 sm:w-auto"
                   title="payment"
                   href="#"
                 >

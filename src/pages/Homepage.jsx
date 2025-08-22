@@ -1,9 +1,9 @@
-import React from "react";
 import Navigation from "../components/Navigation";
 import Heros from "../components/Heros";
 import SummaryPro from "../components/SummaryPro";
 import FollowMe from "../components/Follow";
 import { Helmet } from "react-helmet";
+import Gsap from "../components/Gsap";
 
 const Homepage = () => {
   return (
@@ -21,6 +21,7 @@ const Homepage = () => {
       </Helmet>
       <Navigation />
       <Heros />
+      <Gsap />
       <SummaryPro />
       <FollowMe />
     </>
