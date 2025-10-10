@@ -148,7 +148,7 @@ const About = () => {
               <p className="text-sm">
                 Part-time Teaching Class Sekawan Media Industry
               </p>
-              <p className="text-slate-700 text-sm">February 2024</p>
+              <p className="text-slate-700 text-sm">February 2024, October 2025</p>
             </div>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">

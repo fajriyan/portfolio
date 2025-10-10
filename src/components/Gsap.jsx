@@ -149,56 +149,58 @@ const Gsap = () => {
   }, []);
 
   return (
-    <section
-      ref={containerRef}
-      className="h-[90dvh] flex items-center justify-center flex-col overflow-hidden relative"
-    >
-      <div className="bg-gradient-to-b from-[#f2eefe] to-black/0 w-full h-[20%] z-[2] top-0 absolute"></div>
+    <section className="overflow-hidden relative">
       <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `
+        ref={containerRef}
+        className="h-[90dvh] flex items-center justify-center flex-col overflow-hidden relative"
+      >
+        <div className="bg-gradient-to-b from-[#f2eefe] to-black/0 w-full h-[20%] z-[2] top-0 absolute"></div>
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `
         linear-gradient(to right, #d1d5db 1px, transparent 1px),
         linear-gradient(to bottom, #d1d5db 1px, transparent 1px)
       `,
-          backgroundSize: "32px 32px",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%)",
-          maskImage:
-            "radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%)",
-        }}
-      />
+            backgroundSize: "32px 32px",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%)",
+            maskImage:
+              "radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%)",
+          }}
+        />
 
-      <h2 className="text-2xl font-semibold mb-6">How I Add Value</h2>
-      <div className="relative  w-full">
-        <div className="overflow-hidden flex items-center h-[150px] justify-center flex-col">
-          {items.map((item, i) => (
-            <div key={i} className="word absolute flex flex-col items-center">
-              <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold text-center text-slate-800">
-                {item.title}
-              </h1>
-              <p className="mt-2 text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-xl text-center">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+        <h2 className="text-2xl font-semibold mb-6">How I Add Value</h2>
+        <div className="relative  w-full">
+          <div className="overflow-hidden flex items-center h-[150px] justify-center flex-col">
+            {items.map((item, i) => (
+              <div key={i} className="word absolute flex flex-col items-center">
+                <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold text-center text-slate-800">
+                  {item.title}
+                </h1>
+                <p className="mt-2 text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-xl text-center">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Logo kiri */}
+          <img
+            ref={leftLogoRef}
+            src={items[0].left}
+            alt="Left Logo"
+            className="absolute left-0 top-[20dvh] xl:top-[100px] h-[140px] xl:h-[250px] object-contain"
+          />
+
+          {/* Logo kanan */}
+          <img
+            ref={rightLogoRef}
+            src={items[0].right}
+            alt="Right Logo"
+            className="absolute -right-10 rotate-[30deg] -top-[30dvh] xl:-top-[200px] h-[140px] xl:h-[200px] object-contain"
+          />
         </div>
-
-        {/* Logo kiri */}
-        <img
-          ref={leftLogoRef}
-          src={items[0].left}
-          alt="Left Logo"
-          className="absolute left-0 top-[20dvh] xl:top-[100px] h-[140px] xl:h-[250px] object-contain"
-        />
-
-        {/* Logo kanan */}
-        <img
-          ref={rightLogoRef}
-          src={items[0].right}
-          alt="Right Logo"
-          className="absolute -right-10 rotate-[30deg] -top-[30dvh] xl:-top-[200px] h-[140px] xl:h-[200px] object-contain"
-        />
       </div>
     </section>
   );
