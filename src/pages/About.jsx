@@ -38,7 +38,7 @@ const About = () => {
       </Helmet>
       <Navigation />
       {/* -/- */}
-      <div className="container mx-auto py-5 px-3 md:px-0">
+      <div className="container mx-auto py-5 px-3 md:px-0 mt-5">
         <article className="rounded-xl bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-100 to-slate-100 p-6 ring-1 ring-slate-300 sm:p-8">
           <div className="flex items-center sm:hidden w-[30%] mb-2 border-2 border-slate-700 rounded">
             <img
@@ -106,8 +106,7 @@ const About = () => {
                 <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
                   Last updated :{" "}
                   <Link
-                    to="https://github.com/fajriyan/portfolio"
-                    target="_blank"
+                    to="/changelog"
                   >
                     <button className="underline hover:text-gray-700">
                       {lastUpdated || "Loading..."}

@@ -13,12 +13,15 @@ const Navigation = () => {
     <>
       <header
         aria-label="Site Header"
-        className="sticky top-0 z-[100] backdrop-blur-lg bg-violet-50/40 text-slate-800 border-b border-slate-300"
+        className="container mx-auto sticky top-5 z-[100] backdrop-blur-lg px-5 bg-violet-50/60 text-slate-800 border border-slate-300 rounded-xl"
       >
         <div className="container mx-auto px-3 md:px-0">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <Link to="/" className="block text-slate-900 text-lg font-semibold">
+              <Link
+                to="/"
+                className="block text-slate-900 text-lg font-semibold"
+              >
                 fajriyan
               </Link>
             </div>

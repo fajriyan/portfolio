@@ -1,5 +1,5 @@
 export const mainMenu = [
-  { id: 1, title: "Home", url: "/" },
+  { id: 1, title: "Overview", url: "/" },
   { id: 2, title: "Projects", url: "/project" },
   { id: 3, title: "About Me", url: "/about" },
 ];

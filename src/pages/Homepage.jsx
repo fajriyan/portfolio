@@ -11,7 +11,7 @@ const Homepage = () => {
       {window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Homepage | Portfolio fajriyan</title>
+        <title>Overview | Portfolio fajriyan</title>
         <link rel="canonical" href="https://fajriyan.pages.dev/" />
         <meta
           name="keywords"

@@ -10,7 +10,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="container mx-auto px-3 md:px-0">
+    <div className="container mx-auto px-3 md:px-0 mt-14">
       <div className="pt-7 flex flex-wrap">
         <h1 className="font-bold text-3xl text-slate-800 w-full text-center">
           All Project
