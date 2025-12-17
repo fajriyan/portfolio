@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Changelog = () => {
   const [commits, setCommits] = useState([]);

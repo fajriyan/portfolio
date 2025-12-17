@@ -2,8 +2,8 @@ import Navigation from "../components/Navigation";
 import Heros from "../components/Heros";
 import SummaryPro from "../components/SummaryPro";
 import FollowMe from "../components/Follow";
-import { Helmet } from "react-helmet";
 import Gsap from "../components/Gsap";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Homepage = () => {
   return (

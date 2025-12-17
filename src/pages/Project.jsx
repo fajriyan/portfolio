@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import Cards from "../components/Cards";
 import FollowMe from "../components/Follow";
-import { Helmet } from "react-helmet";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Project = () => {
   return (

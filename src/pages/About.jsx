@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Navigation from "../components/Navigation";
 import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const About = () => {
   const [lastUpdated, setLastUpdated] = useState("");
@@ -105,9 +105,7 @@ const About = () => {
 
                 <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
                   Last updated :{" "}
-                  <Link
-                    to="/changelog"
-                  >
+                  <Link to="/changelog">
                     <button className="underline hover:text-gray-700">
                       {lastUpdated || "Loading..."}
                     </button>
@@ -147,7 +145,9 @@ const About = () => {
               <p className="text-sm">
                 Part-time Teaching Class Sekawan Media Industry
               </p>
-              <p className="text-slate-700 text-sm">February 2024, October 2025</p>
+              <p className="text-slate-700 text-sm">
+                February 2024, October 2025
+              </p>
             </div>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">
