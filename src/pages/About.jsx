@@ -124,7 +124,7 @@ const About = () => {
             </h2>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">
-                SiteSpirit | CV Adikara Solusindo - Malang
+               Sekawan Media | PT Sekawan Media Informatika
               </h3>
               <p className="text-sm">Fullstack Web Developer</p>
               <p className="text-slate-700 text-sm">August 2023 - Present</p>
@@ -151,7 +151,7 @@ const About = () => {
             </div>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">
-                Sekawan Media | PT Sekawan Media Informatika - Malang
+                Sekawan Media | PT Sekawan Media Informatika
               </h3>
               <p className="text-sm">Frontend & Web Developer</p>
               <p className="text-slate-700 text-sm">June 2022 - August 2023</p>
@@ -195,7 +195,7 @@ const About = () => {
           </div>
 
           {/* || My Expertise start */}
-          <div className="md:col-span-2">
+          {/* <div className="md:col-span-2">
             <h2 className="text-xl font-semibold font-sans">TOOLS & SKILL</h2>
             <div className="mt-4">
               <div className="border border-slate-400 p-3 rounded-md">
@@ -447,7 +447,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* || My Expertise end */}
         </div>
         {/* grid  end */}
@@ -456,6 +456,20 @@ const About = () => {
           Find me on other platforms
         </h2>
         <div className="flex gap-2 flex-wrap">
+          <a
+            href="https://www.youtube.com/@fajriyann"
+            target="_blank"
+            rel="noreferrer"
+            className="border p-2 border-slate-400 rounded-md flex items-center gap-2 font-bold hover:ring-2 ring-violet-300"
+          >
+            <img
+              width={30}
+              className="object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+              alt=""
+            />
+           @fajriyann
+          </a>
           <a
             href="https://www.npmjs.com/~fajriyan"
             target="_blank"
@@ -521,7 +535,7 @@ const About = () => {
             <img
               width={30}
               className="object-contain"
-              src="https://seeklogo.com/images/P/pexels-logo-EFB9232709-seeklogo.com.png"
+              src="https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/68bf05a48c4054d73fa0289b_68753d3a3cf7d125d66f10ab_64ffb2b7dee9fde09d183799_5d5d168cbbbfb9ca2820198a_Pexels-Twitter-profile.jpeg"
               alt=""
             />
             Pexels
