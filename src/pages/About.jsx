@@ -4,6 +4,7 @@ import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
 import { Link } from "react-router-dom";
 import { Helmet } from "@dr.pogodin/react-helmet";
+import Subscribe from "../components/Subscribe";
 
 const About = () => {
   const [lastUpdated, setLastUpdated] = useState("");
@@ -116,6 +117,7 @@ const About = () => {
             </div>
           </div>
         </article>
+
         {/* grid start */}
         <div className="my-10 grid md:grid-cols-2 gap-10 md:px-3 lg:px-0">
           <div className="">
@@ -124,7 +126,7 @@ const About = () => {
             </h2>
             <div className="border mt-2 border-slate-400 rounded-md p-2">
               <h3 className="font-bold text-lg text-slate-800">
-               Sekawan Media | PT Sekawan Media Informatika
+                Sekawan Media | PT Sekawan Media Informatika
               </h3>
               <p className="text-sm">Fullstack Web Developer</p>
               <p className="text-slate-700 text-sm">August 2023 - Present</p>
@@ -452,6 +454,10 @@ const About = () => {
         </div>
         {/* grid  end */}
 
+        <div className="my-10">
+          <Subscribe />
+        </div>
+
         <h2 className="text-xl font-semibold font-sans mt-10 mb-2">
           Find me on other platforms
         </h2>
@@ -468,7 +474,7 @@ const About = () => {
               src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
               alt=""
             />
-           @fajriyann
+            @fajriyann
           </a>
           <a
             href="https://www.npmjs.com/~fajriyan"

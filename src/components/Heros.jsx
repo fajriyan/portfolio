@@ -8,7 +8,10 @@ const Heros = () => {
         <div className="mx-auto flex items-center min-h-[600px] h-screen lg:items-center">
           <div className="mx-auto px-3 text-center">
             <h1 className="text-3xl lg:text-5xl font-bold text-slate-700">
-              Hi, I'm fajriyan
+              Hi, I'm{" "}
+              <span class="bg-gradient-to-r from-indigo-800 via-pink-800 to-gray-900 bg-clip-text text-transparent animate-gradient">
+                fajriyan
+              </span>
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-slate-800">

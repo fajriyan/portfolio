@@ -4,6 +4,7 @@ import SummaryPro from "../components/SummaryPro";
 import FollowMe from "../components/Follow";
 import Gsap from "../components/Gsap";
 import { Helmet } from "@dr.pogodin/react-helmet";
+import Subscribe from "../components/Subscribe";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,10 @@ const Homepage = () => {
       <Heros />
       <Gsap />
       <SummaryPro />
+      <div className="my-40">
+      <Subscribe/>
+      </div>
+
       <FollowMe />
     </>
   );
