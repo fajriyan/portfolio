@@ -5,6 +5,7 @@ import { DataExp, DataLearnings } from "../data/Important";
 import { Link } from "react-router-dom";
 import { Helmet } from "@dr.pogodin/react-helmet";
 import Subscribe from "../components/Subscribe";
+import GithubActivity from "../components/GithubActivity";
 
 const About = () => {
   const [lastUpdated, setLastUpdated] = useState("");
@@ -152,6 +153,10 @@ const About = () => {
                   </Link>{" "}
                   by fajriyan
                 </p>
+              </div>
+
+              <div className="mt-6">
+                <GithubActivity />
               </div>
             </div>
           </div>
