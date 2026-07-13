@@ -1,24 +1,19 @@
 import Navigation from "../components/Navigation";
 import Cards from "../components/Cards";
 import FollowMe from "../components/Follow";
-import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Project = () => {
-  return (
-    <>
-      {window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
-
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Projects | Portfolio fajriyan</title>
-        <link rel="canonical" href="https://fajriyan.pages.dev/project" />
-        <meta name="keywords" content="project portfolio" />
-      </Helmet>
-      <Navigation />
-      <Cards />
-      <FollowMe />
-    </>
-  );
+   return (
+      <>
+         <title>Projects | Portfolio fajriyan</title>
+         <meta charSet="utf-8" />
+         <link rel="canonical" href="https://fajriyan.pages.dev/project" />
+         <meta name="keywords" content="project portfolio" />
+         <Navigation />
+         <Cards />
+         <FollowMe />
+      </>
+   );
 };
 
 export default Project;

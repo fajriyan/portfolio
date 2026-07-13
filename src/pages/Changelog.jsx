@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Changelog = () => {
   const [commits, setCommits] = useState([]);
@@ -26,11 +25,9 @@ const Changelog = () => {
 
   return (
     <div className="min-h-screen px-3 md:px-0">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Changelog | Portfolio fajriyan</title>
-        <link rel="canonical" href="https://fajriyan.pages.dev/changelog" />
-      </Helmet>
+      <title>Changelog | Portfolio fajriyan</title>
+      <meta charSet="utf-8" />
+      <link rel="canonical" href="https://fajriyan.pages.dev/changelog" />
 
       <Navigation />
 
