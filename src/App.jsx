@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import Changelog from "./pages/Changelog";
 import Homepage from "./pages/Homepage";
 import Project from "./pages/Project";

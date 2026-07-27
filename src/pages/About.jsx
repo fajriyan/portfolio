@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
 import Navigation from "../components/Navigation";
 import FollowMe from "../components/Follow";
 import { DataExp, DataLearnings } from "../data/Important";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Subscribe from "../components/Subscribe";
 import GithubActivity from "../components/GithubActivity";
+import { useEffect, useState } from "react";
 
 const About = () => {
    const [lastUpdated, setLastUpdated] = useState("");
