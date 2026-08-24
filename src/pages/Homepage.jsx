@@ -5,6 +5,7 @@ import FollowMe from "../components/Follow";
 import Gsap from "../components/Gsap";
 import Subscribe from "../components/Subscribe";
 import { useEffect } from "react";
+import PackageShowcase from "../components/PackageShowcase";
 
 const Homepage = () => {
    return (
@@ -20,6 +21,7 @@ const Homepage = () => {
          <Navigation />
          <Heros />
          <Gsap />
+         <PackageShowcase />
          <SummaryPro />
          <div className="my-40">
             <Subscribe />

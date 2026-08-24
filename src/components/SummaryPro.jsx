@@ -4,7 +4,7 @@ import DataProject from "../data/Important";
 const SummaryPro = () => {
    return (
       <div className="container mx-auto" key={Math.random(20)}>
-         <div className="py-7 flex flex-wrap">
+         <div className="pt-32 pb-7 flex flex-wrap">
             <h2 className="font-bold text-3xl text-slate-800 w-full text-center">
                Project Summary
             </h2>
